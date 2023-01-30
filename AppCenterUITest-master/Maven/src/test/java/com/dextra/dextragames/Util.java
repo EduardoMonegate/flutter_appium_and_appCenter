@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 public class Util {
     public static MobileElement findByByOrName(EnhancedAndroidDriver<MobileElement> driver, By by, String name) {
         try {
-            return  driver.findElement(by);
+            return (MobileElement) driver.findElement(by);
 
         } catch (org.openqa.selenium.NoSuchElementException e) {
             return findByName(driver, name);
@@ -17,7 +17,7 @@ public class Util {
     }
 
     public static MobileElement findByName(EnhancedAndroidDriver<MobileElement> driver, String name) {
-        return driver.findElementByAndroidUIAutomator(
+        return (MobileElement) driver.findElementByAndroidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().text(\""
                         + name + "\").instance(0))");
     }

@@ -25,8 +25,8 @@ public class StartAppTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "tela 6.3");
-        capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/eduardo.monegate/Documents/GitHub/AppCenterUITest-master/app-debug.apk");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "tela 5.5");
+        capabilities.setCapability(MobileCapabilityType.APP, "/Users/eduardomonegate/Documents/GitHub/flutter_appium_and_appCenter/AppCenterUITest-master/app-debug.apk");
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 7913);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 
