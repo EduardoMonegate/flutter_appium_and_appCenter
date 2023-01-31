@@ -74,3 +74,4 @@ public class StartAppTest {
 //mvn -DskipTests -P prepare-for-upload package
 
 //appcenter test run appium --app "NDDSmart-Aldebaran/estudo-android-flutter" --devices "NDDSmart-Aldebaran/teste" --app-path ../app-debug.apk --test-series "ui-test" --locale "en_US" --build-dir target/upload
+
